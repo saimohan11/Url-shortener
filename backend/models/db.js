@@ -9,12 +9,11 @@ const urlSchema =  new mongoose.Schema({
         type: String,
         required:true,
         unique: true,
-        default: "",
-        Date: Date.now()
     },
-    hit_count: {
+    clicks: {
         type: Number,
-        default:0
+        required:true,
+        default: 0
     }
 })
 
